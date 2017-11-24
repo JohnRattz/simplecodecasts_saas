@@ -4,8 +4,8 @@
 <head>
     <title>Dev Match</title>
     <%= csrf_meta_tags %>
-        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
@@ -19,17 +19,16 @@
                     <span class="icon-bar"></span>
                 </button>
                 <%= link_to root_path, class: 'navbar-brand' do %>
-                	<i class="fa fa-users"></i>
-                	Dev Match
-            	<% end %>
-            	<!-- The above replaces this, allowing the icon in the <i> tag to be a link -->
-            	<!-- link_to 'Dev Match', root_path, class: 'navbar-brand' -->
-            </div>
-            <div class="collapse navbar-collapse" id="main-nav-collapse">
+                <i class="fa fa-users"></i>
+                Dev Match
+                <% end %>
+                <!-- The above replaces this, allowing the icon in the <i> tag to be a link -->
+                 <!-- link_to 'Dev Match', root_path, class: 'navbar-brand' -->
+             </div>
+             <div class="collapse navbar-collapse" id="main-nav-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <%= link_to "About", about_path %>
-                    </li>
+                    <li><%= link_to "About", about_path %></li>
+                    <li><%= link_to "Contact Us", new_contact_path %></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
