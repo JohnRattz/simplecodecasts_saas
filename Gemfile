@@ -41,6 +41,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'sdoc'
 # Spring speeds up development by keeping your application running in the background
 gem 'spring', group: :development
+# Devise
+gem 'devise'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
