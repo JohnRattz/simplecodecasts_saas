@@ -34,17 +34,19 @@ gem 'coffee-rails', '~> 4.2'
 # Use jQuery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5' # Possible conflicts with Stripe
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # bundle exec rake doc:rails generates teh API under doc/api.
 gem 'sdoc'
 # Spring speeds up development by keeping your application running in the background
 gem 'spring', group: :development
-# Devise
+# Devise (user authentication)
 gem 'devise'
-# Stripe
-gem 'stripe'
+# Stripe (handling payments)
+gem 'stripe' # '1.16.1'
+# Figaro (hide secret keys)
+gem 'figaro' # '1.0.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
